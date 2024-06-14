@@ -1,14 +1,33 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop.
+# KDBar
+개인적으로 사용하기 위한 칵테일 메뉴판 앱
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+# Feature
+## 1. Cocktail List
+<img width="20%" src ="https://github.com/Kim-DG/KDBar/assets/81103357/93768e35-71f9-40e7-a4be-fbbf73979509"/>
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+#### View Drag-> 카테고리에 맞는 칵테일 리스트 출력
+<br/>
 
+## 2. Cocktail detail info
+<img width="20%" src ="https://github.com/Kim-DG/KDBar/assets/81103357/11d1fac0-948d-4910-8b99-67a6903af60f"/>
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+#### item click -> 해당 칵테일에 대한 정보 다이얼로그 출력
+<br/>
+
+## 3. Recommand cocktail
+<img width="20%" src ="https://github.com/Kim-DG/KDBar/assets/81103357/e31c0a17-ec43-4154-9608-201d4043f4a3"/>
+
+#### 칵테일 추천 click -> 돌리기 click -> 랜덤으로 한개의 칵테일 정보 출력
+<br/>
+
+## 4. Making Highball
+<img width="20%" src ="https://github.com/Kim-DG/KDBar/assets/81103357/b9729e4e-2efd-4186-86f4-2c8e90f802f1"/>
+
+#### 하이볼 만들기 click -> 재료 선택 -> 해당하는 하이볼 출력 
+<br/>
+
+# Library
+
+### [• Navigation](https://developer.android.com/jetpack/androidx/releases/navigation?hl=ko)
+### [• material-ripple](https://developer.android.com/jetpack/androidx/releases/compose-material?hl=ko)
+### [• Compose animation](https://developer.android.com/jetpack/androidx/releases/compose-animation?hl=ko)
